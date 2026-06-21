@@ -2,6 +2,34 @@
   "name": "zoneshift-mcp",
   "version": "1.0.0",
   "type": "module",
-  "private": true,
-  "dependencies": { "@modelcontextprotocol/sdk": "latest", "zod": "^3" }
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "description": "MCP server for timezone conversion (DST-correct) and epoch-to-zone.",
+  "bin": {
+    "zoneshift-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "server.json",
+    "README.md"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neta08-svg/timezone-convert-api-client.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "timezone",
+    "tz",
+    "dst",
+    "iana"
+  ]
 }
